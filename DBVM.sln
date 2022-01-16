@@ -1,0 +1,64 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1700.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBVM.Core", "DBVM.Core\DBVM.Core.csproj", "{70C8BC9E-24C9-4CD2-A62B-822254D56DA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBVM.MySql", "DBVM.MySql\DBVM.MySql.csproj", "{E218B65A-198B-4A5E-BDBE-9C478E9B4BA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBVM.SqlServer", "DBVM.SqlServer\DBVM.SqlServer.csproj", "{FC30CE8C-2584-4574-ACFF-B59B376884EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBVM.MySql.Test", "DBVM.MySql.Test\DBVM.MySql.Test.csproj", "{CC96B178-1865-405E-8180-C02D43103A8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBVM.SqlServer.Test", "DBVM.SqlServer.Test\DBVM.SqlServer.Test.csproj", "{69C52033-AB39-4917-A01F-5FC9B3B9AD11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBVM.Postgres", "DBVM.Postgres\DBVM.Postgres.csproj", "{51546543-EFB7-48C8-B017-CC7C184D5A3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBVM.Postgres.Test", "DBVM.Postgres.Test\DBVM.Postgres.Test.csproj", "{C196B10C-18BF-4048-ACD7-45AA03B8F752}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70C8BC9E-24C9-4CD2-A62B-822254D56DA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70C8BC9E-24C9-4CD2-A62B-822254D56DA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70C8BC9E-24C9-4CD2-A62B-822254D56DA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70C8BC9E-24C9-4CD2-A62B-822254D56DA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E218B65A-198B-4A5E-BDBE-9C478E9B4BA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E218B65A-198B-4A5E-BDBE-9C478E9B4BA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E218B65A-198B-4A5E-BDBE-9C478E9B4BA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E218B65A-198B-4A5E-BDBE-9C478E9B4BA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC30CE8C-2584-4574-ACFF-B59B376884EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC30CE8C-2584-4574-ACFF-B59B376884EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC30CE8C-2584-4574-ACFF-B59B376884EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC30CE8C-2584-4574-ACFF-B59B376884EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC96B178-1865-405E-8180-C02D43103A8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC96B178-1865-405E-8180-C02D43103A8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC96B178-1865-405E-8180-C02D43103A8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC96B178-1865-405E-8180-C02D43103A8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69C52033-AB39-4917-A01F-5FC9B3B9AD11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69C52033-AB39-4917-A01F-5FC9B3B9AD11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69C52033-AB39-4917-A01F-5FC9B3B9AD11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69C52033-AB39-4917-A01F-5FC9B3B9AD11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51546543-EFB7-48C8-B017-CC7C184D5A3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51546543-EFB7-48C8-B017-CC7C184D5A3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51546543-EFB7-48C8-B017-CC7C184D5A3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51546543-EFB7-48C8-B017-CC7C184D5A3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C196B10C-18BF-4048-ACD7-45AA03B8F752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C196B10C-18BF-4048-ACD7-45AA03B8F752}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C196B10C-18BF-4048-ACD7-45AA03B8F752}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C196B10C-18BF-4048-ACD7-45AA03B8F752}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {392F701E-DF64-4B9D-8EE1-C15367BB5C00}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		description = 数据库表版本管理工具 DB Version Manager
+	EndGlobalSection
+EndGlobal

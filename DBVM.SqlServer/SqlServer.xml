@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<dbversions>
+  <!--<versionitem type="sqlfile" version="1" author="Hou Longchao" date="20220101" desc="说明,脚本中不能使用GO等非标准SQL" >
+    <![CDATA[
+    init.sql
+    ]]>
+  </versionitem>-->
+
+  <!--<versionitem type="sql" version="2" author="Hou Longchao" date="20220101">
+    <![CDATA[
+    select * from ___dbversions;
+    ]]>
+  </versionitem>-->
+</dbversions>

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>MySql 数据表版本管理工具 MySql DB Version Manager</Description>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\DBVM.Core\DBVM.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.27">
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="MySql.xml" Pack="true" CopyToPublishDirectory="Always" PackagePath="content\Mysql.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
