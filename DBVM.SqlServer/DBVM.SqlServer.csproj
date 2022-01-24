@@ -1,7 +1,22 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+	<GenerateDocumentationFile>True</GenerateDocumentationFile>
+	<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+	<OpenApiGenerateDocuments>false</OpenApiGenerateDocuments>
+	<Company></Company>
+	<Owners>Hou Longchao</Owners>
+	<Authors>Hou Longchao</Authors>
+	<Version>1.0.0.0</Version>
+	<Description>Sql Server 数据库脚本管理</Description>
+	<Product>DBVM</Product>
+	<PackageLicenseUrl />
+	<PackageProjectUrl/>
+	<PackageTags>DB, Version, DBVersion</PackageTags>
+	<RepositoryUrl/>
+	<RepositoryType>DBVersion</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,7 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="SqlServer.xml" Pack="true" CopyToPublishDirectory="Always" PackagePath="content\SqlServer.xml">
+    <None Include="SqlServer.xml" Pack="true" CopyToPublishDirectory="Always">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
