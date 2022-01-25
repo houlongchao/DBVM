@@ -5,7 +5,7 @@
     <RootNamespace>DBVM</RootNamespace>
 	<GenerateDocumentationFile>True</GenerateDocumentationFile>
 	<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
-	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
 	<OpenApiGenerateDocuments>false</OpenApiGenerateDocuments>
 	<Company></Company>
@@ -15,10 +15,11 @@
 	<Description>数据库脚本管理基础包</Description>
 	<Product>DBVM</Product>
 	<PackageLicenseUrl />
-	<PackageProjectUrl/>
-	<PackageTags>DB, Version, DBVersion</PackageTags>
-	<RepositoryUrl/>
-	<RepositoryType>DBVersion</RepositoryType>
+	<PackageProjectUrl />
+	<PackageTags>DB;Version;DBVersion</PackageTags>
+	<RepositoryUrl />
+	<RepositoryType></RepositoryType>
+	<Copyright>Copyright (c) DBVM 2022</Copyright>
   </PropertyGroup>
 
 </Project>

@@ -16,9 +16,8 @@ namespace DBVM.SqlServer
         /// <param name="xmlFolder">升级描述文件所在目录</param>
         /// <param name="versionXml">升级描述文件文件名</param>
         /// <exception cref="Exception"></exception>
-        public SqlServerVersionManager(string connectionString, string xmlFolder = "", string versionXml = "SqlServer.xml") : base(xmlFolder, versionXml)
+        public SqlServerVersionManager(string connectionString, string xmlFolder = "DBVM", string versionXml = "SqlServer.xml") : base(xmlFolder, versionXml)
         {
-
             ConnectionString = connectionString;
             DbConnection = new SqlConnection(connectionString);
 
@@ -54,7 +53,7 @@ END
 ";
             using (var cmd = new SqlCommand(createTableSql, (SqlConnection)DbConnection))
             {
-                cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQueryAsync();
             }
         }
 

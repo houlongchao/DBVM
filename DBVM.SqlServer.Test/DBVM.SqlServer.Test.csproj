@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -18,7 +18,7 @@
     <ProjectReference Include="..\DBVM.SqlServer\DBVM.SqlServer.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <None Update="SqlServer.xml">
+    <None Update="DBVM\SqlServer.xml">
       <Pack>true</Pack>
       <CopyToPublishDirectory>Always</CopyToPublishDirectory>
       <PackagePath>content\SqlServer.xml</PackagePath>

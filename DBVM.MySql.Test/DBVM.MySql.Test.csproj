@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -18,7 +18,7 @@
     <ProjectReference Include="..\DBVM.MySql\DBVM.MySql.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <None Update="MySql.xml">
+    <None Update="DBVM\MySql.xml">
       <Pack>true</Pack>
       <CopyToPublishDirectory>Always</CopyToPublishDirectory>
       <PackagePath>content\Mysql.xml</PackagePath>

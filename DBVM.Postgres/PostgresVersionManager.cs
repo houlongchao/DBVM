@@ -15,7 +15,7 @@ namespace DBVM.Postgres
         /// <param name="xmlFolder">升级描述文件所在目录</param>
         /// <param name="versionXml">升级描述文件文件名</param>
         /// <exception cref="Exception"></exception>
-        public PostgresVersionManager(string connectionString, string xmlFolder = "", string versionXml = "Postgres.xml") : base(xmlFolder, versionXml)
+        public PostgresVersionManager(string connectionString, string xmlFolder = "DBVM", string versionXml = "Postgres.xml") : base(xmlFolder, versionXml)
         {
 
             ConnectionString = connectionString;

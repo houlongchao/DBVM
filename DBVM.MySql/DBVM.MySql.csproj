@@ -14,9 +14,9 @@
 	<Description>MySql 数据库脚本管理</Description>
 	<Product>DBVM</Product>
 	<PackageLicenseUrl />
-	<PackageProjectUrl/>
+	<PackageProjectUrl />
 	<PackageTags>DB, Version, DBVersion</PackageTags>
-	<RepositoryUrl/>
+	<RepositoryUrl />
 	<RepositoryType>DBVersion</RepositoryType>
   </PropertyGroup>
   
@@ -30,7 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="MySql.xml" Pack="true" CopyToPublishDirectory="Always" PackagePath="content\Mysql.xml">
+    <None Update="DBVM\MySql.xml" Pack="true" CopyToPublishDirectory="Always" PackagePath="content\MySql.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

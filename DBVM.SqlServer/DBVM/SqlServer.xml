@@ -6,9 +6,9 @@
     ]]>
   </versionitem>-->
 
-  <versionitem type="sql" version="2" author="Hou Longchao" date="20220101">
+  <!--<versionitem type="sql" version="5" author="Hou Longchao" date="20220101" desc="说明,版本号建议多升几个，有助于合并代码时解决冲突" >
     <![CDATA[
     select * from ___dbversions;
     ]]>
-  </versionitem>
+  </versionitem>-->
 </dbversions>

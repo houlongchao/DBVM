@@ -30,8 +30,8 @@
     <ProjectReference Include="..\DBVM.Core\DBVM.Core.csproj" />
   </ItemGroup>
   <ItemGroup>
-	<None Include="Postgres.xml" Pack="true" CopyToPublishDirectory="Always" PackagePath="content\Postgres.xml">
-		<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	</None>
+    <None Update="DBVM\Postgres.xml" Pack="true" CopyToPublishDirectory="Always" PackagePath="content\Postgres.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 </Project>
