@@ -53,7 +53,7 @@ END
 ";
             using (var cmd = new SqlCommand(createTableSql, (SqlConnection)DbConnection))
             {
-                cmd.ExecuteNonQueryAsync();
+                cmd.ExecuteNonQuery();
             }
         }
 

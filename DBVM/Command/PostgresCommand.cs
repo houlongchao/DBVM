@@ -12,7 +12,7 @@ namespace DBVM.Command
                 settings.Connection = $"Host={settings.Host??"localhost"};Port={settings.Port??5432};Username={settings.User};Password={settings.Password}; Database={settings.DbName};Pooling=true;Minimum Pool Size=1";
             }
 
-            var dbvm = new PostgresVersionManager(settings.Connection);
+            var dbvm = new PostgresVersionManager(settings.Connection, versionXml: settings.VersionXml ?? "Postgres.xml");
             await ExecuteAsync(dbvm);
             return 0;
         }

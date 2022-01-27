@@ -2,17 +2,17 @@
 
 namespace DBVM.SqlServer.Test
 {
-    public class MsServerVersionManagerTests
+    public class SqlServerVersionManagerTests
     {
         [Test]
-        public void MsServerVersionManagerTest()
+        public void SqlServerVersionManagerTest()
         {
-            var manager = new SqlServerVersionManager($"server=localhost;uid=sa;pwd=Hlc12345678;database=dbvm");
-            //manager.CheckAndUpdate();
-            var versions = manager.GetNeedUpdateVersions();
+            var dbvm = new SqlServerVersionManager($"Data Source=host-1.udschina.com;User Id=sa;Password=ZXCasdqwe123;Initial Catalog=A;TrustServerCertificate=true;Pooling=true;Min Pool Size=1", versionXml: @"D:\UDS\02 Other Codes\UDS.CfgSys\UDS.CfgSys.Domain.Schindler.QOT\DBVM\SqlServer.xml");
+            //dbvm.CheckAndUpdate();
+            var versions = dbvm.GetNeedUpdateVersions();
             foreach (var versionItem in versions)
             {
-                manager.UpdateVersion(versionItem);
+                dbvm.UpdateVersion(versionItem);
             }
         }
     }

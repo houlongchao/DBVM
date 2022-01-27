@@ -7,8 +7,8 @@ namespace DBVM.MySql.Test
         [Test]
         public void MySqlVersionManagerTest()
         {
-            var manager = new MySqlVersionManager($"Server=localhost;Database=dbvm;Uid=root;Pwd=123456;");
-            manager.CheckAndUpdate();
+            var dbvm = new MySqlVersionManager($"Server=localhost;Database=dbvm;Uid=root;Pwd=123456;");
+            dbvm.CheckAndUpdate();
         }
     }
 }

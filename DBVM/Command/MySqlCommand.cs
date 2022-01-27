@@ -12,7 +12,7 @@ namespace DBVM.Command
                 settings.Connection = $"Data Source={settings.Host??"localhost"};Port={settings.Port??3306};User ID={settings.User};Password={settings.Password}; Initial Catalog={settings.DbName};Charset=utf8; SslMode=none;Min pool size=1";
             }
 
-            var dbvm = new MySqlVersionManager(settings.Connection);
+            var dbvm = new MySqlVersionManager(settings.Connection, versionXml: settings.VersionXml ?? "MySql.xml");
             await ExecuteAsync(dbvm);
             return 0;
         }

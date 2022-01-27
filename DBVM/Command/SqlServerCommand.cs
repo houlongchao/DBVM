@@ -12,7 +12,7 @@ namespace DBVM.Command
                 settings.Connection = $"Data Source={settings.Host??"localhost"},{settings.Port??1433};User Id={settings.User};Password={settings.Password};Initial Catalog={settings.DbName};TrustServerCertificate=true;Pooling=true;Min Pool Size=1";
             }
 
-            var dbvm = new SqlServerVersionManager(settings.Connection);
+            var dbvm = new SqlServerVersionManager(settings.Connection, versionXml: settings.VersionXml ?? "SqlServer.xml");
             await ExecuteAsync(dbvm);
             return 0;
         }

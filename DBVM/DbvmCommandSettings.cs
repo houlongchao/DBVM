@@ -33,5 +33,9 @@ namespace DBVM
         [Description("数据库名")]
         [CommandOption("--db")]
         public string DbName { get; set; }
+
+        [Description("脚本控制xml")]
+        [CommandOption("--xml")]
+        public string VersionXml { get; set; }
     }
 }

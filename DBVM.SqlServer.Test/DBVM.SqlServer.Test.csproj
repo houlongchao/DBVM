@@ -18,10 +18,9 @@
     <ProjectReference Include="..\DBVM.SqlServer\DBVM.SqlServer.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <None Update="DBVM\SqlServer.xml">
+    <None Update="DBVM\*">
       <Pack>true</Pack>
       <CopyToPublishDirectory>Always</CopyToPublishDirectory>
-      <PackagePath>content\SqlServer.xml</PackagePath>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
