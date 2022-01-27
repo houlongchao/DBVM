@@ -1,37 +1,37 @@
 <Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<OpenApiGenerateDocuments>false</OpenApiGenerateDocuments>
+		<Company></Company>
+		<Owners>Hou Longchao</Owners>
+		<Authors>Hou Longchao</Authors>
+		<Version>1.1.0.0</Version>
+		<Description>Postgres 数据库脚本管理</Description>
+		<Product>DBVM</Product>
+		<PackageLicenseUrl />
+		<PackageProjectUrl />
+		<PackageTags>DB, Version, DBVersion</PackageTags>
+		<RepositoryUrl />
+		<RepositoryType>DBVersion</RepositoryType>
+		<Copyright>Copyright (c) DBVM 2022</Copyright>
+	</PropertyGroup>
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-	<GenerateDocumentationFile>True</GenerateDocumentationFile>
-	<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
-	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-	<OpenApiGenerateDocuments>false</OpenApiGenerateDocuments>
-	<Company></Company>
-	<Owners>Hou Longchao</Owners>
-	<Authors>Hou Longchao</Authors>
-	<Version>1.0.0.0</Version>
-	<Description>Postgres 数据库脚本管理</Description>
-	<Product>DBVM</Product>
-	<PackageLicenseUrl />
-	<PackageProjectUrl />
-	<PackageTags>DB, Version, DBVersion</PackageTags>
-	<RepositoryUrl />
-	<RepositoryType>DBVersion</RepositoryType>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="Npgsql" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Npgsql" Version="6.0.2" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DBVM.Core\DBVM.Core.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Update="DBVM\Postgres.xml" Pack="true" CopyToPublishDirectory="Always" PackagePath="content\Postgres.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
+	<ItemGroup>
+		<None Remove="Npgsql" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Npgsql" Version="6.0.2" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\DBVM.Core\DBVM.Core.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Update="DBVM\Postgres.xml" Pack="true" CopyToPublishDirectory="Always" PackagePath="content\DBVM\Postgres.xml">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
 </Project>

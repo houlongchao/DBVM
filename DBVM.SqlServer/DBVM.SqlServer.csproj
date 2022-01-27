@@ -1,36 +1,37 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-	<GenerateDocumentationFile>True</GenerateDocumentationFile>
-	<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
-	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-	<OpenApiGenerateDocuments>false</OpenApiGenerateDocuments>
-	<Company></Company>
-	<Owners>Hou Longchao</Owners>
-	<Authors>Hou Longchao</Authors>
-	<Version>1.0.0.2</Version>
-	<Description>Sql Server 数据库脚本管理</Description>
-	<Product>DBVM</Product>
-	<PackageLicenseUrl />
-	<PackageProjectUrl />
-	<PackageTags>DB, Version, DBVersion</PackageTags>
-	<RepositoryUrl />
-	<RepositoryType>DBVersion</RepositoryType>
-  </PropertyGroup>
-	
-  <ItemGroup>
-    <ProjectReference Include="..\DBVM.Core\DBVM.Core.csproj" />
-  </ItemGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<OpenApiGenerateDocuments>false</OpenApiGenerateDocuments>
+		<Company></Company>
+		<Owners>Hou Longchao</Owners>
+		<Authors>Hou Longchao</Authors>
+		<Version>1.1.0.0</Version>
+		<Description>Sql Server 数据库脚本管理</Description>
+		<Product>DBVM</Product>
+		<PackageLicenseUrl />
+		<PackageProjectUrl />
+		<PackageTags>DB, Version, DBVersion</PackageTags>
+		<RepositoryUrl />
+		<RepositoryType>DBVersion</RepositoryType>
+		<Copyright>Copyright (c) DBVM 2022</Copyright>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="System.Data.SqlClient" Version="4.8.3">
-    </PackageReference>
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\DBVM.Core\DBVM.Core.csproj" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <None Update="DBVM\SqlServer.xml" Pack="true" CopyToPublishDirectory="Always" PackagePath="content\SqlServer.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="System.Data.SqlClient" Version="4.8.3">
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="DBVM\SqlServer.xml" Pack="true" CopyToPublishDirectory="Always" PackagePath="content\DBVM\SqlServer.xml">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
 </Project>

@@ -1,33 +1,33 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
 
-    <IsPackable>false</IsPackable>
-  </PropertyGroup>
+		<IsPackable>false</IsPackable>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
-    <PackageReference Include="NUnit" Version="3.13.2" />
-    <PackageReference Include="NUnit3TestAdapter" Version="4.2.0" />
-    <PackageReference Include="coverlet.collector" Version="3.1.0" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
+		<PackageReference Include="NUnit" Version="3.13.2" />
+		<PackageReference Include="NUnit3TestAdapter" Version="4.2.0" />
+		<PackageReference Include="coverlet.collector" Version="3.1.0" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\DBVM.Postgres\DBVM.Postgres.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Update="SqlServer.xml">
-      <Pack>true</Pack>
-      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
-      <PackagePath>content\SqlServer.xml</PackagePath>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="SqlServerVersionManagerTests.cs">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Compile>
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\DBVM.Postgres\DBVM.Postgres.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Update="SqlServer.xml">
+			<Pack>true</Pack>
+			<CopyToPublishDirectory>Always</CopyToPublishDirectory>
+			<PackagePath>content\SqlServer.xml</PackagePath>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="SqlServerVersionManagerTests.cs">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Compile>
+	</ItemGroup>
 </Project>

@@ -1,25 +1,25 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>DBVM</RootNamespace>
-	<GenerateDocumentationFile>True</GenerateDocumentationFile>
-	<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
-	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-	<OpenApiGenerateDocuments>false</OpenApiGenerateDocuments>
-	<Company></Company>
-	<Owners>Hou Longchao</Owners>
-	<Authors>Hou Longchao</Authors>
-	<Version>1.0.0.0</Version>
-	<Description>数据库脚本管理基础包</Description>
-	<Product>DBVM</Product>
-	<PackageLicenseUrl />
-	<PackageProjectUrl />
-	<PackageTags>DB;Version;DBVersion</PackageTags>
-	<RepositoryUrl />
-	<RepositoryType></RepositoryType>
-	<Copyright>Copyright (c) DBVM 2022</Copyright>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<RootNamespace>DBVM</RootNamespace>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<OpenApiGenerateDocuments>false</OpenApiGenerateDocuments>
+		<Company></Company>
+		<Owners>Hou Longchao</Owners>
+		<Authors>Hou Longchao</Authors>
+		<Version>1.1.0.0</Version>
+		<Description>数据库脚本管理基础包</Description>
+		<Product>DBVM</Product>
+		<PackageLicenseUrl />
+		<PackageProjectUrl />
+		<PackageTags>DB;Version;DBVersion</PackageTags>
+		<RepositoryUrl />
+		<RepositoryType></RepositoryType>
+		<Copyright>Copyright (c) DBVM 2022</Copyright>
+	</PropertyGroup>
 
 </Project>
