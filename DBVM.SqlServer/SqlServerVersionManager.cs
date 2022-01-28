@@ -10,13 +10,18 @@ namespace DBVM.SqlServer
     public class SqlServerVersionManager : BaseVersionManager
     {
         /// <summary>
+        /// 默认xml
+        /// </summary>
+        public const string DefaultXml = "SqlServer.xml";
+
+        /// <summary>
         /// 构造SqlServer数据表版本管理器
         /// </summary>
         /// <param name="connectionString">连接字符串</param>
         /// <param name="xmlFolder">升级描述文件所在目录</param>
         /// <param name="versionXml">升级描述文件文件名</param>
         /// <exception cref="Exception"></exception>
-        public SqlServerVersionManager(string connectionString, string xmlFolder = "DBVM", string versionXml = "SqlServer.xml") : base(xmlFolder, versionXml)
+        public SqlServerVersionManager(string connectionString, string xmlFolder = DefaultFolder, string versionXml = DefaultXml) : base(xmlFolder, versionXml)
         {
             ConnectionString = connectionString;
             DbConnection = new SqlConnection(connectionString);

@@ -2,9 +2,22 @@
 
 	<PropertyGroup>
 		<OutputType>Exe</OutputType>
-		<TargetFramework>net6.0</TargetFramework>
-		<ImplicitUsings>enable</ImplicitUsings>
-		<Nullable>enable</Nullable>
+		<TargetFrameworks>netcoreapp3.1;net5.0;net6.0</TargetFrameworks>
+		<PackAsTool>true</PackAsTool>
+		<ToolCommandName>dbvm</ToolCommandName>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Company></Company>
+		<Owners>Hou Longchao</Owners>
+		<Authors>Hou Longchao</Authors>
+		<Version>1.1.0</Version>
+		<Description>数据库脚本管理工具</Description>
+		<Product>DBVM</Product>
+		<PackageLicenseUrl />
+		<PackageProjectUrl />
+		<PackageTags>DB, Version, DBVersion</PackageTags>
+		<RepositoryUrl />
+		<RepositoryType>DBVersion</RepositoryType>
+		<Copyright>Copyright (c) DBVM 2022</Copyright>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -12,9 +25,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\DBVM.MySql\DBVM.MySql.csproj" />
-		<ProjectReference Include="..\DBVM.Postgres\DBVM.Postgres.csproj" />
-		<ProjectReference Include="..\DBVM.SqlServer\DBVM.SqlServer.csproj" />
+	  <ProjectReference Include="..\DBVM.MySql\DBVM.MySql.csproj" />
+	  <ProjectReference Include="..\DBVM.Postgres\DBVM.Postgres.csproj" />
+	  <ProjectReference Include="..\DBVM.SqlServer\DBVM.SqlServer.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="README.MD" Pack="true" PackagePath="\" />
 	</ItemGroup>
 
 </Project>

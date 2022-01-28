@@ -1,5 +1,9 @@
 ﻿using Spectre.Console;
 using Spectre.Console.Cli;
+using System;
+using System.IO;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace DBVM.Command
 {
@@ -45,6 +49,22 @@ namespace DBVM.Command
                     ctx.Refresh();
                 });
             return Task.CompletedTask;
+        }
+
+        protected void WriteInfo(string title, string message)
+        {
+            AnsiConsole.MarkupLine($"{title}: [grey]{message}[/]{Environment.NewLine}");
+        }
+
+        protected void EnsureHasVersionXml(string xmlPath, string defaultXmlPath)
+        {
+            if (!File.Exists(Path.Combine(Directory.GetCurrentDirectory(), xmlPath ??"")) &&
+                !File.Exists(Path.Combine(Directory.GetCurrentDirectory(), BaseVersionManager.DefaultFolder, defaultXmlPath)) &&
+                !File.Exists(Path.Combine(Directory.GetCurrentDirectory(), defaultXmlPath)))
+            {
+                Directory.CreateDirectory(Path.Combine(Directory.GetCurrentDirectory(), BaseVersionManager.DefaultFolder));
+                File.WriteAllText(Path.Combine(Directory.GetCurrentDirectory(), BaseVersionManager.DefaultFolder, defaultXmlPath), DbVersionsTemplate.Get());
+            }
         }
     }
 }

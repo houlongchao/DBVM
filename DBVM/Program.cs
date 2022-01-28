@@ -1,6 +1,7 @@
 ﻿using DBVM.Command;
 using Spectre.Console;
 using Spectre.Console.Cli;
+using System.Threading.Tasks;
 
 public static class Program
 {

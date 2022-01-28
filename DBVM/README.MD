@@ -22,3 +22,15 @@ COMMANDS:
     Postgres
 ```
 
+## 通过dotnet tool安装
+
+``` shell
+# 全局安装dbvm
+dotnet tool install -g dbvm 
+
+
+# 使用dbvm
+dbvm 
+dbvm MySql
+```
+

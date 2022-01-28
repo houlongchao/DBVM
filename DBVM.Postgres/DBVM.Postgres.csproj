@@ -33,5 +33,6 @@
 		<None Update="DBVM\Postgres.xml" Pack="true" CopyToPublishDirectory="Always" PackagePath="content\DBVM\Postgres.xml">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</None>
+		<None Include="README.MD" Pack="true" PackagePath="\"/>
 	</ItemGroup>
 </Project>

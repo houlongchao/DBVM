@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
 using System.IO;
-using System.Reflection;
 using System.Text;
 using System.Xml;
 
@@ -15,32 +14,37 @@ namespace DBVM
     public abstract class BaseVersionManager : IVersionManager, IDisposable
     {
         /// <summary>
-        /// 当前程序集目录
+        /// 默认xml文件夹
         /// </summary>
-	    protected readonly string CurrentFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+        public const string DefaultFolder = "DBVM";
+
+        /// <summary>
+        /// 当前工作目录
+        /// </summary>
+	    protected readonly string CurrentFolder = Directory.GetCurrentDirectory();
 
         /// <summary>
         /// 数据库版本管理
         /// </summary>
         /// <param name="xmlFolder">升级描述文件所在目录</param>
         /// <param name="versionXml">升级描述文件文件名</param>
-        protected BaseVersionManager(string xmlFolder = "", string versionXml = "__dbversion.xml")
+        protected BaseVersionManager(string xmlFolder = DefaultFolder, string versionXml = "__dbversion.xml")
         {
-            VersionXmlPath = Path.Combine(CurrentFolder, xmlFolder, versionXml);
+            VersionXmlPath = Path.Combine(CurrentFolder, versionXml);
 
             if (!File.Exists(VersionXmlPath))
             {
-                VersionXmlPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, xmlFolder, versionXml);
-            }
-
-            if (!File.Exists(VersionXmlPath))
-            {
-                VersionXmlPath = Path.Combine(CurrentFolder, versionXml);
+                VersionXmlPath = Path.Combine(CurrentFolder, xmlFolder, versionXml);
             }
 
             if (!File.Exists(VersionXmlPath))
             {
                 VersionXmlPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, versionXml);
+            }
+
+            if (!File.Exists(VersionXmlPath))
+            {
+                VersionXmlPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, xmlFolder, versionXml);
             }
         }
 

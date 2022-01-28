@@ -22,4 +22,12 @@
 		<Copyright>Copyright (c) DBVM 2022</Copyright>
 	</PropertyGroup>
 
+	<ItemGroup>
+	  <None Remove="dbversions.temp" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="dbversions.temp" />
+	</ItemGroup>
+
 </Project>

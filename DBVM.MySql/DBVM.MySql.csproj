@@ -34,5 +34,6 @@
 		<None Update="DBVM\MySql.xml" Pack="true" CopyToPublishDirectory="Always" PackagePath="content\DBVM\MySql.xml">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</None>
+		<None Include="README.MD" Pack="true" PackagePath="\"/>
 	</ItemGroup>
 </Project>

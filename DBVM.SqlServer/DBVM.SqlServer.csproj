@@ -33,5 +33,6 @@
 		<None Update="DBVM\SqlServer.xml" Pack="true" CopyToPublishDirectory="Always" PackagePath="content\DBVM\SqlServer.xml">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</None>
+		<None Include="README.MD" Pack="true" PackagePath="\"/>
 	</ItemGroup>
 </Project>
