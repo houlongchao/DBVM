@@ -10,7 +10,7 @@
 		<Company></Company>
 		<Owners>Hou Longchao</Owners>
 		<Authors>Hou Longchao</Authors>
-		<Version>1.1.0.0</Version>
+		<Version>1.2.0.0</Version>
 		<Description>MySql 数据库脚本管理</Description>
 		<Product>DBVM</Product>
 		<PackageLicenseUrl />
@@ -26,14 +26,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="MySql.Data" Version="8.0.27">
-		</PackageReference>
+		<PackageReference Include="MySqlConnector" Version="2.1.9" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<None Update="DBVM\MySql.xml" Pack="true" CopyToPublishDirectory="Always" PackagePath="content\DBVM\MySql.xml">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</None>
-		<None Include="README.MD" Pack="true" PackagePath="\"/>
+		<None Include="README.MD" Pack="true" PackagePath="\" />
 	</ItemGroup>
 </Project>

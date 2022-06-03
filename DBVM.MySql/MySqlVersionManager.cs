@@ -1,5 +1,5 @@
-﻿using System;
-using MySql.Data.MySqlClient;
+﻿using MySqlConnector;
+using System;
 
 namespace DBVM.MySql
 {

@@ -45,15 +45,15 @@
 </dbversions>
 ```
 
-### `NuGet`包引用
+### `NuGet` 包引用
 
 引入具体类型的数据库实现，如：`DBVM.MySql`,`DBVM.SqlServer`等。
 
 详细说明见具体数据库包。
 
-[DBVM.MySql]: DBVM.MySql/README.MD
-[DBVM.SqlServer]: DBVM.SqlServer/README.MD
-[DBVM.Postgres]: DBVM.Postgres/README.MD
+[DBVM.MySql/README.MD]: DBVM.MySql/README.MD	"DBVM.MySql/README.MD"
+[DBVM.SqlServer/README.MD]: DBVM.SqlServer/README.MD	"DBVM.SqlServer/README.MD"
+[DBVM.Postgres/README.MD]: DBVM.Postgres/README.MD	"DBVM.Postgres/README.MD"
 
 一般在程序入口针对特定数据库类型，选择对应的实例对象执行`update`。
 
@@ -74,9 +74,9 @@ foreach (var versionItem in versions)
 ```
 
 
-### `cli`命令执行
+### `CLI` 命令执行
 
 通过命令调用`DBVM.exe`命令执行指定的数据库升级，具体说明见
 
-[DBVM]: DBVM/README.MD
+[DBVM/README.MD]: DBVM/README.MD	"DBVM/README.MD"
 

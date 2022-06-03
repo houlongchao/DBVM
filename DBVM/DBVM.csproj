@@ -9,7 +9,7 @@
 		<Company></Company>
 		<Owners>Hou Longchao</Owners>
 		<Authors>Hou Longchao</Authors>
-		<Version>1.1.0</Version>
+		<Version>1.2.0</Version>
 		<Description>数据库脚本管理工具</Description>
 		<Product>DBVM</Product>
 		<PackageLicenseUrl />
