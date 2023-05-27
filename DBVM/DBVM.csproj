@@ -1,5 +1,4 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
 	<PropertyGroup>
 		<OutputType>Exe</OutputType>
 		<TargetFrameworks>netcoreapp3.1;net5.0;net6.0</TargetFrameworks>
@@ -9,29 +8,26 @@
 		<Company></Company>
 		<Owners>Hou Longchao</Owners>
 		<Authors>Hou Longchao</Authors>
-		<Version>1.2.0</Version>
+		<Version>1.2.1</Version>
 		<Description>数据库脚本管理工具</Description>
 		<Product>DBVM</Product>
-		<PackageLicenseUrl />
-		<PackageProjectUrl />
+		<PackageProjectUrl>https://github.com/houlongchao/DBVM</PackageProjectUrl>
 		<PackageTags>DB, Version, DBVersion</PackageTags>
-		<RepositoryUrl />
+		<RepositoryUrl>https://github.com/houlongchao/DBVM</RepositoryUrl>
 		<RepositoryType>DBVersion</RepositoryType>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<Copyright>Copyright (c) DBVM 2022</Copyright>
 	</PropertyGroup>
-
 	<ItemGroup>
 		<PackageReference Include="Spectre.Console" Version="0.43.0" />
 	</ItemGroup>
-
 	<ItemGroup>
-	  <ProjectReference Include="..\DBVM.MySql\DBVM.MySql.csproj" />
-	  <ProjectReference Include="..\DBVM.Postgres\DBVM.Postgres.csproj" />
-	  <ProjectReference Include="..\DBVM.SqlServer\DBVM.SqlServer.csproj" />
+		<ProjectReference Include="..\DBVM.MySql\DBVM.MySql.csproj" />
+		<ProjectReference Include="..\DBVM.Postgres\DBVM.Postgres.csproj" />
+		<ProjectReference Include="..\DBVM.SqlServer\DBVM.SqlServer.csproj" />
 	</ItemGroup>
-
 	<ItemGroup>
 		<None Include="README.MD" Pack="true" PackagePath="\" />
 	</ItemGroup>
-
 </Project>

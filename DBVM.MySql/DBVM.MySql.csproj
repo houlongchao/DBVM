@@ -1,5 +1,4 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
@@ -10,25 +9,23 @@
 		<Company></Company>
 		<Owners>Hou Longchao</Owners>
 		<Authors>Hou Longchao</Authors>
-		<Version>1.2.0.0</Version>
+		<Version>1.2.1</Version>
 		<Description>MySql 数据库脚本管理</Description>
 		<Product>DBVM</Product>
-		<PackageLicenseUrl />
-		<PackageProjectUrl />
+		<PackageProjectUrl>https://github.com/houlongchao/DBVM</PackageProjectUrl>
 		<PackageTags>DB, Version, DBVersion</PackageTags>
-		<RepositoryUrl />
+		<RepositoryUrl>https://github.com/houlongchao/DBVM</RepositoryUrl>
 		<RepositoryType>DBVersion</RepositoryType>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<Copyright>Copyright (c) DBVM 2022</Copyright>
 	</PropertyGroup>
-
 	<ItemGroup>
 		<ProjectReference Include="..\DBVM.Core\DBVM.Core.csproj" />
 	</ItemGroup>
-
 	<ItemGroup>
 		<PackageReference Include="MySqlConnector" Version="2.1.9" />
 	</ItemGroup>
-
 	<ItemGroup>
 		<None Update="DBVM\MySql.xml" Pack="true" CopyToPublishDirectory="Always" PackagePath="content\DBVM\MySql.xml">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>

@@ -1,10 +1,25 @@
 # DB Version Manager（DBVM）数据库版本管理器
 
+**DBVM:** [![NuGet Badge](https://buildstats.info/nuget/DBVM)](https://www.nuget.org/packages/DBVM)
+**DBVM.MySql:** [![NuGet Badge](https://buildstats.info/nuget/DBVM.MySql)](https://www.nuget.org/packages/DBVM.MySql)
+**DBVM.SqlServer:** [![NuGet Badge](https://buildstats.info/nuget/DBVM.SqlServer)](https://www.nuget.org/packages/DBVM.SqlServer)
+**DBVM.Postgres:** [![NuGet Badge](https://buildstats.info/nuget/DBVM.Postgres)](https://www.nuget.org/packages/DBVM.Postgres)
+
+![GitHub](https://img.shields.io/github/license/houlongchao/DBVM?style=social)
+
 > 通过可追踪，可管理的方式对数据库DDL进行管理。
 
-## 使用说明
+## Nuget安装
 
-### 使用前提
+``` shell
+dotnet add package DBVM.MySql
+dotnet add package DBVM.SqlServer
+dotnet add package DBVM.Postgres
+```
+
+详细说明见具体数据库包。
+
+## 使用前提
 
 无论是哪种使用方式，都必须包含数据库升级描述文件。
 
@@ -45,17 +60,7 @@
 </dbversions>
 ```
 
-### `NuGet` 包引用
-
-引入具体类型的数据库实现，如：`DBVM.MySql`,`DBVM.SqlServer`等。
-
-详细说明见具体数据库包。
-
-[DBVM.MySql/README.MD]: DBVM.MySql/README.MD	"DBVM.MySql/README.MD"
-[DBVM.SqlServer/README.MD]: DBVM.SqlServer/README.MD	"DBVM.SqlServer/README.MD"
-[DBVM.Postgres/README.MD]: DBVM.Postgres/README.MD	"DBVM.Postgres/README.MD"
-
-一般在程序入口针对特定数据库类型，选择对应的实例对象执行`update`。
+## 使用方式
 
 ``` C#
 // 方法一，直接检查更新
@@ -72,11 +77,3 @@ foreach (var versionItem in versions)
     dbvm.UpdateVersion(versionItem);
 }
 ```
-
-
-### `CLI` 命令执行
-
-通过命令调用`DBVM.exe`命令执行指定的数据库升级，具体说明见
-
-[DBVM/README.MD]: DBVM/README.MD	"DBVM/README.MD"
-

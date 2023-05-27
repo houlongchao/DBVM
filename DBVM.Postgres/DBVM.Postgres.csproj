@@ -9,17 +9,17 @@
 		<Company></Company>
 		<Owners>Hou Longchao</Owners>
 		<Authors>Hou Longchao</Authors>
-		<Version>1.2.0.0</Version>
+		<Version>1.2.1</Version>
 		<Description>Postgres 数据库脚本管理</Description>
 		<Product>DBVM</Product>
-		<PackageLicenseUrl />
-		<PackageProjectUrl />
+		<PackageProjectUrl>https://github.com/houlongchao/DBVM</PackageProjectUrl>
 		<PackageTags>DB, Version, DBVersion</PackageTags>
-		<RepositoryUrl />
+		<RepositoryUrl>https://github.com/houlongchao/DBVM</RepositoryUrl>
 		<RepositoryType>DBVersion</RepositoryType>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<Copyright>Copyright (c) DBVM 2022</Copyright>
 	</PropertyGroup>
-
 	<ItemGroup>
 		<None Remove="Npgsql" />
 	</ItemGroup>

@@ -1,5 +1,4 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<RootNamespace>DBVM</RootNamespace>
@@ -11,23 +10,21 @@
 		<Company></Company>
 		<Owners>Hou Longchao</Owners>
 		<Authors>Hou Longchao</Authors>
-		<Version>1.1.0.0</Version>
+		<Version>1.2.1</Version>
 		<Description>数据库脚本管理基础包</Description>
 		<Product>DBVM</Product>
-		<PackageLicenseUrl />
-		<PackageProjectUrl />
-		<PackageTags>DB;Version;DBVersion</PackageTags>
-		<RepositoryUrl />
-		<RepositoryType></RepositoryType>
+		<PackageProjectUrl>https://github.com/houlongchao/DBVM</PackageProjectUrl>
+		<PackageTags>DB, Version, DBVersion</PackageTags>
+		<RepositoryUrl>https://github.com/houlongchao/DBVM</RepositoryUrl>
+		<RepositoryType>DBVersion</RepositoryType>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<Copyright>Copyright (c) DBVM 2022</Copyright>
 	</PropertyGroup>
-
 	<ItemGroup>
-	  <None Remove="dbversions.temp" />
+		<None Remove="dbversions.temp" />
 	</ItemGroup>
-
 	<ItemGroup>
-	  <EmbeddedResource Include="dbversions.temp" />
+		<EmbeddedResource Include="dbversions.temp" />
 	</ItemGroup>
-
 </Project>
